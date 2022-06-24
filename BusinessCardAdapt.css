@@ -1,0 +1,1006 @@
+@font-face {
+    font-family: "Open_Sans";
+    src: url('../courses/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf');
+    font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Стилі меню */
+.dws-menu {
+    margin: 0 auto;
+}
+
+.dws-menu > ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.dws-menu ul,
+.dws-menu ol {
+    list-style: none;
+} /*скрывает маркеры списков*/
+
+.dws-menu > ul li a {
+    display: block;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d0e4f7+0,73b1e7+24,0a77d5+50,539fe1+79,87bcea+100;Blue+Pipe+%231 */
+background: rgb(208,228,247); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(208,228,247,1) 0%, rgba(115,177,231,1) 24%, rgba(10,119,213,1) 50%, rgba(83,159,225,1) 79%, rgba(135,188,234,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(208,228,247,1) 0%,rgba(115,177,231,1) 24%,rgba(10,119,213,1) 50%,rgba(83,159,225,1) 79%,rgba(135,188,234,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(208,228,247,1) 0%,rgba(115,177,231,1) 24%,rgba(10,119,213,1) 50%,rgba(83,159,225,1) 79%,rgba(135,188,234,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=0 ); /* IE6-9 */
+
+    padding: 10px 30px;
+    font-size: 14px;/*размер шрифта*/
+    color: whitesmoke;/*цвет шрифта*/
+    text-decoration: none;/*убираем подчеркивание*/
+    text-transform: uppercase;/*делаем пункты меню заглавными буквами*/
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+
+    z-index: 10;
+    position: relative;
+} 
+
+.dws-menu > ul li {
+    border-right: 1px solid #454547;
+    z-index: 10;
+    position: relative;
+}
+
+/*Анимируем меню: делаем активными кнопки при наведении*/
+.dws-menu li a:hover {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+20,2989d8+50,1e5799+80&0+0,0.8+15,1+19,1+81,0.8+85,0+100;Blue+Two+Sided+Transparent */
+background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(30,87,153,0.8) 15%, rgba(30,87,153,1) 19%, rgba(30,87,153,1) 20%, rgba(41,137,216,1) 50%, rgba(30,87,153,1) 80%, rgba(30,87,153,1) 81%, rgba(30,87,153,0.8) 85%, rgba(30,87,153,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(30,87,153,0.8) 15%,rgba(30,87,153,1) 19%,rgba(30,87,153,1) 20%,rgba(41,137,216,1) 50%,rgba(30,87,153,1) 80%,rgba(30,87,153,1) 81%,rgba(30,87,153,0.8) 85%,rgba(30,87,153,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(30,87,153,0.8) 15%,rgba(30,87,153,1) 19%,rgba(30,87,153,1) 20%,rgba(41,137,216,1) 50%,rgba(30,87,153,1) 80%,rgba(30,87,153,1) 81%,rgba(30,87,153,0.8) 85%,rgba(30,87,153,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#001e5799',GradientType=0 ); /* IE6-9 */
+/*Цвет блока*/
+    color: white;/*Цвет шрифта*/
+    box-shadow: 1px 5px 10px -5px black;/*добавим черную расплывчатую тень*/
+    transition: all 0.3s ease;/*плавное появление*/
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+
+    z-index: 10;
+    position: relative;
+}
+
+.dws-menu > ul li:first-child {
+    border-left: 1px solid #454547;
+    z-index: 10;
+    position: relative;
+}
+
+/*Sub menu*/
+.dws-menu li ul {
+    position: absolute;
+    min-width: 150px;
+    display: none;/*скрываем подменю*/
+}
+
+.dws-menu li > ul li {
+    border: 1px solid #c7c8ca;
+    z-index: 10;
+    position: relative;
+}
+
+.dws-menu li > ul li a {
+    padding: 10px;
+    text-transform: none;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d0e4f7+0,73b1e7+24,0a77d5+50,539fe1+79,87bcea+100;Blue+Pipe+%231 */
+background: rgb(208,228,247); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(208,228,247,1) 0%, rgba(115,177,231,1) 24%, rgba(10,119,213,1) 50%, rgba(83,159,225,1) 79%, rgba(135,188,234,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(208,228,247,1) 0%,rgba(115,177,231,1) 24%,rgba(10,119,213,1) 50%,rgba(83,159,225,1) 79%,rgba(135,188,234,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(208,228,247,1) 0%,rgba(115,177,231,1) 24%,rgba(10,119,213,1) 50%,rgba(83,159,225,1) 79%,rgba(135,188,234,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=0 ); /* IE6-9 */
+    z-index: 10;/*Без z-index позиционирование почемуто-то не помогает*/
+    position: relative;/*Позиционируемые элементы размещаются поверх непозиционируемых. Это для того, чтобы выпадающее меню было перед картинкой карусели*/
+}
+
+.dws-menu li:hover > ul {
+    display: block;
+}
+
+/* Шрифт заголовків */
+
+h1, h2, h3, h4, h5 {
+    font-family: "Roboto";
+    font-weight: 900;
+}
+
+/* Карусель */
+
+.slider {
+    width: 100%;
+    height: auto;
+    margin: -10px auto 100px;
+}
+
+.c-in {
+    z-index: 0;
+    position: relative;
+}
+
+/* Container holding the image and the text */
+/* .c-it {
+    position: relative;
+    text-align: center;
+    color: white;
+} */
+
+.c-in img {
+    width: 100%;
+    height: auto;
+}
+
+/* Текст на каруселі */
+.Text-1 {
+    position: absolute;
+    bottom: 60px;
+    right: 16px;
+    color: blue;
+    text-align: center;
+    font-size: 40px;
+}
+
+.Text-2 {
+    position: absolute;
+    bottom: 45px;
+    right: 16px;
+    color: blue;
+    text-align: center;
+    font-size: 40px;
+}
+
+.Text-3 {
+    position: absolute;
+    bottom: 45px;
+    left: 16px;
+    color: blue;
+    text-align: center;
+    font-size: 40px;
+}
+
+/* Про нас */
+.portfolio > h2 {
+    text-align: center;
+}
+
+.portfolio ul li {
+    font-family: "Open_Sans";
+    font-weight: 400;
+    font-size: 16px;
+} 
+
+.aboutcompany {
+    display: flex;
+    margin: 30px 0;
+    margin-top: 60px;
+}
+    
+.company_info {
+    text-align: justify;
+    padding-right: 30px;
+    border-left: 2px solid cornflowerblue;
+}
+    
+.company_info_head {
+    padding-bottom: 70px;
+}
+    
+.company_info_head > h3 {
+    text-align: center;
+}
+    
+.company_info_content > h5 {
+    text-align: center;
+}
+
+.company_info ul li::marker, .me_info ul li::marker {
+    color: blue;
+}
+
+.aboutme {
+    display: flex;
+    margin: 30px 0;
+    margin-top: 60px;
+}
+
+.me_info {
+    text-align: justify;
+    padding-right: 30px;
+    border-left: 2px solid cornflowerblue;
+}
+
+.me_info_head {
+    padding-bottom: 50px;
+}
+
+.me_info_head > h3 {
+    text-align: center;
+}
+
+.me_info > h5 {
+    text-align: center;
+}
+
+.ourteam {
+    margin-top: 60px;
+}
+
+.ourteam >h3 {
+    text-align: center;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    /* padding-left: 30px;
+    padding-right: 30px; */
+}
+
+.member {
+    width: 30%;
+}
+
+.member h5 {
+    color: rgb(108, 16, 148);
+}
+
+.wrapper p {
+    font-family: "Open_Sans";
+    font-weight: 400;
+    font-size: 16px;
+} 
+
+.xpandable-block > p {
+    text-align: justify;
+    padding-left: 30px;
+    /* border-left: 2px solid tomato; */
+}
+
+.xpandable-block > h6 {
+    padding-left: 30px;
+    font-weight: bolder;
+}
+
+.xpandable-block {
+    border-left: 2px solid tomato;
+}
+
+.xpandable-block ul li, .xpandable-block p {
+    font-size: 14px;
+}
+
+.xpandable-block ul li::marker {
+    color: darkviolet;  
+    font-size: 20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+  .xpandable-block {
+    height: 55px;
+    overflow: hidden;
+    order: 0;
+}
+ .xpand-button {
+    order: 1;}
+  
+  input[type="checkbox"] {
+   display: none;
+}
+  input[type="checkbox"]:checked + .xpandable-block {
+    height: auto;
+}
+
+  label {
+    order: 1;
+    color: blue;
+    text-decoration: underline;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.member > img {
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Заняття */
+
+.lessons {
+    margin-top: 60px;
+}
+
+/* Розклад занять */
+.table {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    caption-side: top;
+    border-spacing: 3px;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: aquamarine;
+}
+
+table {
+    margin: auto;
+
+}
+.table {
+    padding-top: 20px;
+}
+
+.table > h2, h4 {
+    text-align: center;
+}
+
+tr {
+    border: 1px solid cornflowerblue;
+}
+
+ th, td {
+     border: 1px solid cornflowerblue;
+     padding: 10px;
+}
+
+.lessons a {
+    text-decoration: none;
+    color: darkblue;
+    font-weight: bold;
+}
+
+.lessons a:hover {
+    color: fuchsia;
+}
+
+/* Кнопка для запису дитини */
+.container_for_fb {
+    display: flex;
+    justify-content: center;
+}
+
+.floating-button {
+    text-decoration: none;
+    display: inline-block;
+    width: 190px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: #141110;
+    background: tomato;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+}
+
+  .floating-button:hover {
+    background: #2EE59D;
+    box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+    color: white;
+    transform: translateY(-7px);
+}
+
+  /* Опис занять */
+#accordionExample > h4 {
+    text-align: center;
+}
+
+#accordionExample {
+    margin: 70px 0 15px;
+    padding-top: 15px;
+}
+
+/* Наші переваги */
+.container_for_adv {
+    background-color: aquamarine;
+}
+
+.Advantages {
+    margin-top: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.why_we > h2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.box-1, .box-2 {
+    width: 50%;
+}
+
+br {
+    padding: 60px;
+}
+
+.box ul li {
+    list-style-type: none;
+    font-size: 18px; 
+}
+
+.box ul li::before {
+    content: "❤"; 
+    color:#f16092;  
+}
+
+.box ul li:hover {
+    font-weight: bolder;
+    color: fuchsia;
+}
+
+#container_for_fb {
+    margin-bottom: 50px;
+}
+
+/* Контакти */
+
+.Contacts > h2 {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.part-1 {
+    width: 30%;
+}
+
+.part-2 {
+    width: 70%;
+}
+
+.part-1 h6 {
+    font-weight: bolder;
+}
+
+.part-1 input, .part-1 textarea {
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.part-1 input {
+    outline: 0;
+}
+
+.part-1 input:focus, .part-1 textarea:focus {
+    border-color: rgb(14, 14, 109);
+    background-color: rgb(174, 174, 226);
+}
+
+.part-1 label {
+    font-weight: bold;
+}
+
+.border-button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 10px 0;
+    position: relative;
+    color: blue;
+    border: 1px solid rgba(207, 20, 135, 0.027);
+    background: rgb(174, 174, 226);
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+}
+  .border-button:before, .border-button:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    box-sizing: border-box;
+}
+  .border-button:before {
+    bottom: 0;
+    left: 0;
+    border-left: 1px solid blue;
+    border-top: 1px solid blue;
+    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+    -moz-transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+    -ms-transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+    -webkit-transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+    -o-transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+
+  .border-button:after {
+    top: 0;
+    right: 0;
+    border-right: 1px solid blue;
+    border-bottom: 1px solid blue;
+    transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+    -moz-transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+    -ms-transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+    -webkit-transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+    -o-transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+}
+
+  .border-button:hover:before, 
+  .border-button:hover:after {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+
+  .border-button:hover:before {
+    transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+    -moz-transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+    -ms-transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+    -webkit-transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+    -o-transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+}
+
+  .border-button:hover:after {
+    transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+    -moz-transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+    -ms-transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+    -webkit-transition:0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+    -o-transition:0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+}
+
+  .border-button:hover {
+    background: rgba(255, 255, 255, .2);
+} 
+
+/* Футер */
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    padding: 30px;
+    background: black;
+    color: gray;
+}
+
+.f2 {
+    width: 25%;
+    margin: 0 auto;
+}
+
+.f2 > ul {
+    list-style: none;
+}
+
+.f2 > ul >li {
+    font-size: 15px;
+}
+
+.f2 >ul li a {
+     text-decoration: none;
+     color: gray;
+}
+
+.f2 a {
+    text-decoration: none;
+     color: gray;
+}
+
+.f2 a:hover {
+    color: #4c97ee;
+} 
+
+.f2 > img {
+    width: 35px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.f2 >p {
+    font-size: 10px;
+}
+
+/* .footer_links:hover {
+    color: #4830F0;
+} */
+
+.footer_links_ikon:hover {
+    width: 45px;
+    height: auto;
+}
+
+.f2 input {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.footer_links_gradient_button {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 20px 30px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+
+}
+  .footer_links_gradient_button:hover {
+    background-position: right center;
+} 
+
+
+
+/* Меню */
+@media (max-width: 768px){
+    .dws-menu > ul li a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px){
+    .dws-menu > ul li a {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 768px){
+    .dws-menu > ul li a {
+        padding: 10px 15px;
+    }
+}
+
+
+/* Карусель */
+@media (max-width:768px) {
+    .Text-1 {
+        bottom: 30px;
+        right: 15px;
+    }
+    
+    .Text-2 {
+        bottom: 20px;
+        right: 15px;
+    }
+    
+    .Text-3 {
+        bottom: 20px;
+        left: 15px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:576px) {
+    .Text-1 {
+        bottom: 20px;
+        right: 10px;
+    }
+    
+    .Text-2 {
+        bottom: 5px;
+        right: 10px;
+    }
+    
+    .Text-3 {
+        bottom: 20px;
+        left: 10px;
+    }
+}
+
+/* Про нас */
+/* Про компанію, про засновницю */
+@media (max-width: 1100px) {
+    .aboutcompany img, .aboutme img {
+        width:550px;
+        height: auto;
+    }
+}
+
+@media (max-width: 1025px) {
+    .aboutcompany img, .aboutme img {
+        width:450px;
+        height: auto;
+    }
+}
+
+@media (max-width: 1055px) {
+    .company_info ul li, .me_info ul li {
+        font-size: 14px;
+    }
+
+    .company_info_head h3, .me_info_head h3 {
+        font-size: 16px;
+    }
+
+    .company_info h5, .me_info h5 {
+        font-size: smaller;
+    }
+
+    .company_info_head, 
+    .me_info_head  {
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 945px) {
+    .company_info_head, 
+    .me_info_head {
+        padding-bottom: 10px;
+    }   
+}
+
+@media (max-width: 845px) {
+    .aboutcompany img, .aboutme img {
+        width:350px;
+        height: auto;
+    }
+
+    .portfolio h2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutcompany, .aboutme {
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    .aboutcompany img, .aboutme img {
+        width: 450px;
+        height: auto;
+    }
+
+    .img {
+        margin: 0 auto;
+    }
+}
+
+/* Наша команда */
+@media (max-width: 768px) {
+    .team {
+        display: block;
+    }
+
+    .member {
+        width:100%;
+        height: auto;
+    }
+}
+
+/* Розклад занять */
+@media (max-width:840px) {
+    th, td {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:690px) {
+    .big-table {
+        overflow: auto;
+        position: relative;
+    }
+    .big-table table {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .scroll-right:after {
+        content: '';
+        display: block;
+        width: 15px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 500;
+        background: radial-gradient(ellipse at right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 100% center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: 15px 100%;
+        background-position: 100% 0%;
+    }
+    .scroll-left:before {
+        content: '';
+        display: block;
+        width: 15px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 500;
+        background: radial-gradient(ellipse at left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 0 center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: 15px 100%;
+    }
+}
+
+/* Опис занять */
+@media (max-width: 768px) {
+    #accordionExample {
+        width:100%;
+        height: auto;
+        margin: 0;
+    }
+}
+
+/* Наші переваги */
+@media (max-width: 768px) {
+    .box {
+        display: block;
+    }
+
+    .box-1, .box-2 {
+        width:100%;
+        height: auto;
+    }
+}
+
+/* Контакти */
+/* Чому не працює margin: 0 auto? */
+@media (max-width: 768px) {
+    .wrap {
+        display: block;
+    }
+
+    .part-1, .part-2 {
+        width: 100%;
+    }
+
+    .all input, .all textarea, .border-button {
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .border-button {
+        margin-top: 20px;
+    }
+
+     .part-1 h6, .part-1 p, .part-1 form {
+        text-align: center;
+     }
+
+     .iframe {
+        height: 400px;
+        margin-top: 30px;
+     }
+}
+
+@media (max-width: 576px) {
+    .iframe {
+        height: 300px;
+    }
+}
+
+/* Футер */
+@media (max-width: 992px) {
+    .f2 > ul >li {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 930px) {
+    .f2 > ul >li {
+        font-size: 12px;
+    }
+
+    .f2 h5 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 850px) {
+    .f2 > ul >li {
+        font-size: 10px;
+    }
+
+    .f2 h5 {
+        font-size: 14px;
+    }
+
+    .footer_links_ikon {
+        width: 30px;
+        height: auto;
+    }
+    
+    .footer_links_ikon:hover {
+        width: 35px;
+        height: auto;
+    }
+
+    .footer_links_gradient_button {
+        padding: 15px 25px;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer_links_gradient_button {
+        padding: 10px 20px;
+        margin: 10px 0;
+    }
+
+    .f2 input[type="email"]{
+        width:175px;
+     }
+}
+
+@media (max-width: 725px) {
+    .f2 h5 {
+        font-size: 12px;
+    }
+
+    .footer_links_gradient_button {
+        padding: 10px 20px;
+        margin: 10px 0;
+        font-size: 12px;
+    }
+
+    .f2 input[type="email"]{
+        width:150px;
+     }
+}
+
+@media (max-width: 725px) {
+    .f2 h5 {
+        text-align: center;
+    }
+}

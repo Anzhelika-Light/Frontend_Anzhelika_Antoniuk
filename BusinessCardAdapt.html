@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="BusinessCardAdapt.css" />
+    
+</head>
+
+<body>
+    <!--Меню-->
+    <header>
+        <nav class="dws-menu" id="Main_Page">
+            <ul>
+                <li><a href="#AboutUs"><b>ПРО НАС</b></a>
+                    <ul>
+                        <li><a href="#Info_About_Company">Інформація про компанію</a>
+                        </li>
+                        <li><a href="#Info_About_Me">Інформація про засновницю</a>
+                        </li>
+                        <li><a href="#Our_Team">Наша команда</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#Lessons"><b>ЗАНЯТТЯ</b></a>
+                    <ul>
+                        <li><a href="#Schedule">Розклад занять</a></li>
+                        <li><a href="#Description">Опис занять</a></li>
+                    </ul>
+                </li>
+                <li><a href="#Our_Advantages"><b>НАШІ ПЕРЕВАГИ</b></a></li>
+                <li><a href="#Contacts"><b>КОНТАКТИ</b></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <!--Карусель-->
+        <section>
+            <div id="carouselExampleIndicators" class="carousel slide slider container" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner c-in">
+                    <div class="carousel-item active">
+                        <img src="images/Slide_1.jpg" class="d-block w-100" alt="Picture1" />
+                        <div class="Text-1">
+                            <h1><b>SMART KIDS<br />всебічний <br /> розвиток дитини</b></h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Slide_2.jpg" class="d-block w-100" alt="Picture2" />
+                        <div class="Text-2">
+                            <h1><b>SMART KIDS<br />спорт <br /> як стиль життя</b></h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Slide_3.jpg" class="d-block w-100" alt="Picture3" />
+                        <div class="Text-3">
+                            <h1><b>SMART KIDS<br />друзі <br /> на все життя</b></h1>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!--Про нас-->
+        <section>
+            <div class="portfolio container">
+                <h2 id="AboutUs">ПРО НАС</h2>
+                <div class="aboutcompany">
+                    <div class="company_info">
+                        <div class="company_info_head" id="Info_About_Company">
+                            <h3>ІНФОРМАЦІЯ ПРО КОМПАНІЮ</h3>
+                        </div>
+                        <div class="company_info_content">
+                            <h5><b>SMART KIDS</b></h5>
+                            <ul>
+                                <li> Ми створюємо умови для розкриття здібностей і талантів дітей. Ми використовуємо унікальну програму, створену педагогами і психологами. Уся інформація подається в ігровій формі, адже саме мова гри і казки найбільш доступна і зрозуміла для дитини.</li>
+                                <li>Ваша дитина прагнутиме до нових знань і вражень! У нас
+                                    найкраще. Секрет успіху простий - ми робимо все з любов'ю!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="images/Компанія.jpg" alt="It's me" />
+                    </div>
+                </div>
+                <div class="aboutme">
+                    <div class="me_info">
+                        <div class="me_info_head" id="Info_About_Me">
+                            <h3>ІНФОРМАЦІЯ ПРО ЗАСНОВНИЦЮ</h3>
+                        </div>
+                        <h5><b>Анжеліка Антонюк</b> <br />
+                            Засновниця центру всебічного розвитку дітей :</h5>
+                        <ul>
+                            <li> Маю ступінь магістра за спеціальністю "Психологія"</li>
+                            <li> Сертифікований тренер за напрямками "Аеробіка", "Степ-аеробіка", "Силове
+                                тренування","Стрейчинг", "Йога", "Пілатес"</li>
+                            <li>Більше 10 років досвіду роботи з дітьми від 3 до 17 років</li>
+                            <li>5 років роботи з дітьми від 0 до 3 років</li>
+                            <li>8 авторських класів для розвитку дітей, серед яких "Акробати", "BOSU", "Логіка", "Easy
+                                English",
+                                "Baby Yoga", "Ранній розвиток" тощо.</li>
+                        </ul>
+                    </div>
+                    <div class="img">
+                        <img src="images/Portfolio.jpg" alt="It's me" />
+                    </div>
+                </div>
+                <div class="ourteam">
+                    <h3 id="Our_Team">НАША КОМАНДА</h3>
+                    <div class="team">
+                        <div class="member">
+                            <img src="images/teammember1.jpg" alt="Бойко Тетяна" />
+                            <h5>Бойко Тетяна</h5>
+                            <div class="wrapper">
+                                <label for="button1">Більше...</label>
+                                <input type="checkbox" id="button1">
+                                <div class="xpandable-block">
+                                    <h6>Про себе</h6>
+                                    <p>Для мене фітнес — невід'ємна частина життя вже протягом десяти років. Люблю
+                                        працювати на
+                                        результат і постійно вчитися чомусь новому.</p>
+                                    <h6>Освіта та досягнення</h6>
+                                    <ul>
+                                        <li>Національний університет фізичного виховання і спорту України.</li>
+                                        <li>
+                                            Сертифікований
+                                            тренер
+                                            групових програм.
+                                        </li>
+                                        <li>Сертифікований педагог з раннього розвитку.</li>
+                                        <li>Учасник фітнес-конвенцій.</li>
+                                    </ul>
+                                    <h6>Девіз</h6>
+                                    <p>Дозволь кожному дню стати найкращим у твоєму житті.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member">
+                            <img src="images/teammember3.jpg" alt="Діденко Анна" />
+                            <h5>Діденко Анна</h5>
+                            <div class="wrapper">
+                                <label for="button2">Більше...</label>
+                                <input type="checkbox" id="button2">
+                                <div class="xpandable-block">
+                                    <h6>Про себе</h6>
+                                    <p>
+                                        Цілеспрямована, комунікабельна, вмію і знаю, як допомогти досягти цілі, а саме
+                                        знайти своє місце в спорті.
+                                    </p>
+                                    <h6>Освіта та досягнення</h6>
+                                    <ul>
+                                        <li>Сертифікований тренер-партнер.</li>
+                                        <li>Чемпіонка України зі спортивно-бального танцю. Призерка міжнародних
+                                            чемпіонатів.</li>
+                                        <li>Майстер спорту з художньої гімнастики.</li>
+                                    </ul>
+                                    <h6>Девіз</h6>
+                                    <p>Немає нічого неможливого!!!</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member">
+                            <img src="images/teammember2.jpg" alt="Македонська Марія" />
+                            <h5>Македонська Марія</h5>
+                            <div class="wrapper">
+                                <label for="button3">Більше...</label>
+                                <input type="checkbox" id="button3">
+                                <div class="xpandable-block">
+                                    <h6>Про себе</h6>
+                                    <p>
+                                        Я життєрадісна та енергійна людина. Більше 10 років розвиваюся в сучасних
+                                        хореографічних
+                                        напрямках. Люблю свою роботу, адже вона спрямована на
+                                        оздоровлення, розвиток та зміцнення тіла і духу.
+                                    </p>
+                                    <h6>Освіта та досягнення</h6>
+                                    <ul>
+                                        <li>
+                                            Національний університет фізичного виховання і спорту України. Фізіолог
+                                            спорту.
+                                        </li>
+                                        <li>Сертифікований тренер-партнер.</li>
+                                    </ul>
+                                    <h6>Девіз</h6>
+                                    <p>Рух – це життя ! Досконалості немає меж!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Розклад занять-->
+        <section>
+            <div class="table container">
+                <h2 id="Lessons">ЗАНЯТТЯ</h2>
+                <div class="lessons">
+                    <h4 id="Schedule">Розклад занять</h4>
+                    <div class="big-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Заняття</th>
+                                    <th>Пн</th>
+                                    <th>Вт</th>
+                                    <th>Ср</th>
+                                    <th>Чт</th>
+                                    <th>Пт</th>
+                                    <th>Сб</th>
+                                    <th>Нд</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>8.00-8.45</th>
+                                    <td><a href="#linkRanniiRosvytok" title="0-3 роки">Ранній розвиток</a></td>
+                                    <td></td>
+                                    <td><a href="#linkRanniiRosvytok" title="0-3 роки">Ранній розвиток</a></td>
+                                    <td></td>
+                                    <td><a href="#linkRanniiRosvytok" title="0-3 роки">Ранній розвиток</a></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>9.00-9.30</th>
+                                    <td><a href="#linkTopotushki" title="3-6 років">Топотушки</a></td>
+                                    <td><a href="#linkMiniDisco" title="3-6 років">Mini Disco</a></td>
+                                    <td><a href="#linkAkrobaty" title="3-6 років">Акробати</a></td>
+                                    <td><a href="#linkMiniDisco" title="3-6 років">Mini Disco</a></td>
+                                    <td><a href="#linkTopotushki" title="3-6 років">Топотушки</a></td>
+                                    <td><a href="#linkMiniDisco" title="3-6 років">Mini Disco</a></td>
+                                    <td><a href="#linkBabyYoga" title="3-6 років">Baby Yoga</a></td>
+                                </tr>
+                                <tr>
+                                    <th>9.30-10.00</th>
+                                    <td><a href="#linkABV" title="3-6 років">АБВ</a></td>
+                                    <td><a href="#linkLohika" title="3-6 років">Логіка</a></td>
+                                    <td><a href="#linkBabyYoga" title="3-6 років">Baby Yoga</td>
+                                    <td><a href="#linkLohika" title="3-6 років">Логіка</a></td>
+                                    <td><a href="#linkABV" title="3-6 років">АБВ</a></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>10.00-10.30</th>
+                                    <td><a href="#linkSolonaRadist" title="3-6 років">Солона радість</a></td>
+                                    <td><a href="#linkMiniGames" title="3-6 років">Mini games</a></td>
+                                    <td><a href="#linkSolonaRadist" title="3-6 років">Солона радість</a></td>
+                                    <td><a href="#linkMiniGames" title="3-6 років">Mini games</a></td>
+                                    <td><a href="#linkSolonaRadist" title="3-6 років">Солона радість</a></td>
+                                    <td><a href="#linkAkrobaty" title="3-6 років">Акробати</a></td>
+                                    <td><a href="#linkLohika" title="3-6 років">Логіка</a></td>
+                                </tr>
+                                <tr>
+                                    <th>16.00-16.45</th>
+                                    <td><a href="#linkEasyEnglish" title="7-13 років">Easy English</a></td>
+                                    <td><a href="#linkAerobum" title="7-13 років">Аеробум</a></td>
+                                    <td><a href="#linkEasyEnglish" title="7-13 років">Easy English</a></td>
+                                    <td><a href="#linkAerobum" title="7-13 років">Аеробум</a></td>
+                                    <td><a href="#linkEasyEnglish" title="7-13 років">Easy English</a></td>
+                                    <td><a href="#linkAerobum" title="7-13 років">Аеробум</a></td>
+                                    <td><a href="#linkStretching" title="7-13 років">Stretching</a></td>
+                                </tr>
+                                <tr>
+                                    <th>17.00-17.45</th>
+                                    <td><a href="#linkSyloveTrenuvannia" title="7-13 років">Силове тренування</a></td>
+                                    <td><a href="#linkBOSU" title="7-13 років">BOSU</a></td>
+                                    <td><a href="#linkSyloveTrenuvannia" title="7-13 років">Силове тренування</a></td>
+                                    <td><a href="#linkBOSU" title="7-13 років">BOSU</a></td>
+                                    <td><a href="#linkSyloveTrenuvannia" title="7-13 років">Силове тренування</a></td>
+                                    <td><a href="#linkStretching" title="7-13 років">Stretching</a></td>
+                                    <td><a href="#linkRozumnyky" title="7-13 років">Розумники</a></td>
+                                </tr>
+                                <tr>
+                                    <th>18.00-18.45</th>
+                                    <td><a href="#linkRozumnyky" title="7-13 років">Розумники</a></td>
+                                    <td><a href="#linkDanceMix" title="7-13 років">Dance mix</a></td>
+                                    <td><a href="#linkRozumnyky" title="7-13 років">Розумники</a></td>
+                                    <td><a href="#linkStretching" title="7-13 років">Stretching</a></td>
+                                    <td><a href="#linkDanceMix" title="7-13 років">Dance mix</a></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--Кнопка для запису дитини-->
+            <div class="container_for_fb">
+                <div>
+                    <a href="#Contacts" class="floating-button">Записати дитину</a>
+                </div>
+            </div>
+        </section>
+
+        <!--Опис занять-->
+        <section>
+            <div class="container">
+                <div class="accordion" id="accordionExample">
+                    <h4 id="Description">Опис занять</h4>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                                id="linkRanniiRosvytok">
+                                РАННІЙ РОЗВИТОК
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Для дітей віком від 0 до 3 років.</strong>
+                                Заняття спрямоване на розвиток фізичний, емоційний та інтелектуальний розвиток немовлят.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                                id="linkMiniDisco">
+                                MINI DISCO
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Для дітей віком від 3 до 6 років.</strong> Танцювальне заняття для дітей з
+                                вивчення
+                                базових
+                                танцювальних рухів, спрямоване на розвиток координації, гнучкості, витривалості та
+                                уваги.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                                id="linkABV">
+                                АБВ
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Для дітей віком від 3 до 6 років.</strong> Заняття спрямоване на вивчення літер,
+                                читання
+                                слів по
+                                складах та вивчення цифр і дій з ними.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
+                                id="linkLohika">
+                                ЛОГІКА
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Для дітей віком від 3 до 6 років.</strong> Заняття спрямоване на розвиток
+                                логіки,
+                                мислення,
+                                пам'яті, уваги та кмітливості шляхом виконання різних типів завдань.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"
+                                id="linkSolonaRadist">
+                                СОЛОНА РАДІСТЬ
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Для дітей віком від 3 до 6 років.</strong> Заняття спрямоване на розвиток мілкої
+                                моторики та
+                                розвитку навичок роботи з тістом, формами.ю інструментами для ліплення. Розвиває
+                                фантазію та
+                                мислення.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"
+                                id="linkBabyYoga">
+                                BABY YOGA
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Для дітей віком від 3 до 6 років.</strong> Заняття спрямоване на опанування
+                                власного
+                                тіла,
+                                розвиток витривалості, гнучкості, сили, розвиток вміння заспокоюватися та володіти
+                                своїми
+                                емоціями.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"
+                                id="linkAkrobaty">
+                                АКРОБАТИ
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Для дітей віком від 3 до 6 років.</strong> Заняття спрямоване на опанування
+                                власного
+                                тіла,
+                                розвиток витривалості, гнучкості, сили, вивчення базових акробатичних елементів.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight"
+                                id="linkMiniGames">
+                                MINI GAMES
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Для дітей віком від 3 до 6 років.</strong> Ігрове заняття спрямоване розвиток
+                                витривалості,
+                                швидкості, уваги,вміння працювати в команді.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingNine">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine"
+                                id="linkTopotushki">
+                                ТОПОТУШКИ
+                            </button>
+                        </h2>
+                        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Для дітей віком від 3 до 6 років.</strong> Заняття спрямоване на профілактику
+                                плоскостопості.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTen">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen"
+                                id="linkEasyEnglish">
+                                EASY ENGLISH
+                            </button>
+                        </h2>
+                        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Для дітей віком від 7 до 13 років.</strong> Заняття спрямоване на вивчення
+                                англійської
+                                мови
+                                та практику в групах.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEleven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven"
+                                id="linkRozumnyky">
+                                РОЗУМНИКИ
+                            </button>
+                        </h2>
+                        <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Для дітей віком від 7 до 13 років.</strong> Ігрове заняття з використанням
+                                настільних
+                                ігор,спрямоване на розвиток мислення, уваги, пам'яті та комунікативних навичок.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwelve">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve"
+                                id="linkSyloveTrenuvannia">
+                                СИЛОВЕ ТРЕНУВАННЯ
+                            </button>
+                        </h2>
+                        <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Для дітей віком від 7 до 13 років.</strong> Заняття спрямоване на розвиток сили,
+                                витривалості, розвиток м'язової системи, оволодіння правильною технікою виконання вправ.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThirteen">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThirteen" aria-expanded="false"
+                                aria-controls="collapseThirteen" id="linkAerobum">
+                                АЕРОБУМ
+                            </button>
+                        </h2>
+                        <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Для дітей віком від 7 до 13 років.</strong> Заняття спрямоване на розвиток
+                                дихальної
+                                системи, координації, витривалості, включає елементи аеробіки та різних танцювальних
+                                напрямів.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFourteen">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFourteen" aria-expanded="false"
+                                aria-controls="collapseFourteen" id="linkDanceMix">
+                                DANCE MIX
+                            </button>
+                        </h2>
+                        <div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingFourteen"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Для дітей віком від 7 до 13 років.</strong> Танцювальне заняття з використанням
+                                елементів
+                                різних танцювальних напрямів.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFifteen">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen"
+                                id="linkBOSU">
+                                BOSU
+                            </button>
+                        </h2>
+                        <div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingFifteen"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Для дітей віком від 7 до 13 років.</strong>
+                                Заняття на BOSU, спрямоване на розвиток сили, координації, вміння володіти тілом.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSixteen">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen"
+                                id="linkStretching">
+                                STRETCHING
+                            </button>
+                        </h2>
+                        <div id="collapseSixteen" class="accordion-collapse collapse" aria-labelledby="headingSixteen"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Для дітей віком від 7 до 13 років.</strong> Заняття спрямоване на розвиток
+                                гнучкості.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Кнопка для запису дитини-->
+                <div class="container_for_fb">
+                    <div>
+                        <a href="#Contacts" class="floating-button">Записати дитину</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Наші переваги-->
+        <section>
+            <div class="container container_for_adv">
+                <div class="Advantages" id="Our_Advantages">
+                    <div class="Adv">
+                        <h4>НАШІ ПЕРЕВАГИ</h4>
+                    </div>
+                    <div class="why_we">
+                        <h2>Чому обирають саме нас?</h2>
+                    </div>
+                    <div class="box">
+                        <div class="box-1">
+                            <ul>
+                                <li>Ми вчимо вчитися</li> <br />
+                                <li>Ми вчимо любити заняття і отримувати задоволення від процесу</li> <br />
+                                <li>Ми розвиваємо творчий потенціал дитини та розкриваємо її унікальні вміння і таланти
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box-2">
+                            <ul>
+                                <li>Ми застосовуємо інноваційні методики навчання та виховання</li> <br />
+                                <li>Уроки англійської мови проводяться по оксфордських програмах і дають чудові
+                                    результати у
+                                    вивченні мови</li> <br />
+                                <li>Невеликі групи і професійні педагоги дають можливість індивідуального підходу до
+                                    кожної
+                                    дитини
+                                </li>
+                            </ul>
+                        </div>
+                        </ul>
+                    </div>
+                </div>
+                <!--Кнопка для запису дитини-->
+                <div class="container_for_fb" id="container_for_fb">
+                    <div>
+                        <a href="#Contacts" class="floating-button">Записати дитину</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Контакти-->
+        <section>
+            <div class="container" id="Contacts">
+                <div class="Contacts">
+                    <h2>КОНТАКТИ</h2>
+                </div>
+                <div class="wrap">
+                    <div class="part-1">
+                        <div>
+                            <h6>Щоб зв'язатися з нами, подвоніть по телефону:</h6>
+                            <p><a href="tel:+380932221100">+38(093)2221100</a><br />
+                                <a href="tel:+380502221100">+38(050)2221100</a><br />
+                                <a href="tel:+380672221100">+38(067)2221100</a>
+                            </p><br />
+                        </div>
+                        <div class="all">
+                            <h6>Щоб задати нам питання, заповніть контактну форму:</h6>
+                            <form class="form" name="Contact_form" action="contact.php" method="post" id="form">
+                                <input type="text" name="User_name" placeholder="Ім'я*" id="User_name" required />
+                                <input type="email" name="e-mail" placeholder="e-mail*" required />
+                                <input type="tel" name="number" placeholder="Номер телефону*" required />
+                                <label for="Your_message">Коментар:</label> <br />
+                                <textarea name="Your_message" id="Your_message" cols="23" rows="5"></textarea>
+                                <button class="border-button">Відправити</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="part-2">
+                        <iframe class="iframe"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10288.77577634594!2d24.0114636!3d49.8576014!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa6167e194cea7e7!2z0JTQuNGC0Y_Rh9C40Lkg0YbQtdC90YLRgCDRgNC-0LfQstC40YLQutGDIFNtYXJ0IEtpZHMvINC70LDQt9C10YDQvdCwINC10L_RltC70Y_RhtGW0Y8sINC60L7RgdC80LXRgtC-0LvQvtCz!5e0!3m2!1suk!2sua!4v1654670932144!5m2!1suk!2sua"
+                            width="100%" height="540px" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer container">
+            <div class="f2">
+                <h5 class="footer_links"><a href="#Main_Page">Smart Kids</a></h5>
+                <p>Копіювання, тиражування або розповсюдження інформації сайту «Smart Kids» на будь-яких носіях
+                    інформації
+                    та в будь-якому вигляді заборонено.</p>
+            </div>
+            <div class="f2">
+                <ul>
+                    <li><a href="https://childdevelop.com.ua/privacy.html" class="footer_links" target="_blank">Політика
+                            конфіденційності</a></li>
+                    <!--Это сслыка на чужую страницу, взята для примера-->
+                    <li><a href="https://childdevelop.com.ua/agreement.html" class="footer_links" target="_blank">Угода
+                            користувача</a></li>
+                    <!--Это сслыка на чужую страницу, взята для примера-->
+                    <li><a href="https://childdevelop.com.ua/support.html" class="footer_links"
+                            target="_blank">Підтримка користувачів</a></li>
+                    <!--Это сслыка на чужую страницу, взята для примера-->
+                    <li><a href="#Contacts" class="footer_links">Контакти</a></li>
+                </ul>
+            </div>
+            <div class="f2">
+                <h5>СЛІДКУЙТЕ ЗА НАМИ</h5>
+                <a href="https://www.facebook.com/childdevelop.com.ua" target="_blank"><img
+                        src="images/icons8-facebook-новый-48.png" alt="Facebook icon" class="footer_links_ikon"></a>
+            </div>
+            <div class="f2">
+                <h5>ПІДПИШІТЬСЯ НА НАС</h5>
+                <input type="email" name="e-mail" placeholder="e-mail*" required />
+                <!-- <a href="" class="footer_links_gradient_button">Підписатися</a> -->
+                <button class="footer_links_gradient_button">Підписатися</button>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <!--Подключаем библиотеку-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="BusinessCardAdapt.js"></script>
+
+
+</body>
+
+</html>
